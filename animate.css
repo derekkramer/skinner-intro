@@ -1,9 +1,4 @@
-body {
-    text-align: center;
-}
-
 h1 {
-    color: red;
     animation-name: fadeline;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -11,7 +6,6 @@ h1 {
 }
 
 p {
-    color: blue;
     animation-name: fadeopac;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -26,16 +20,28 @@ img {
 }
 
 @keyframes fadeline {
-    from { text-decoration: none; }
-    to { text-decoration: underline; }
+    from {
+        text-decoration: none;
+    }
+    to {
+        text-decoration: underline;
+    }
 }
 
 @keyframes fadeopac {
-    from { opacity: 0.3; }
-    to { opacity: 1; }
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg) translateY(0);
+    }
+    to {
+        transform: rotate(360deg) translateY(300px);
+    }
 }
